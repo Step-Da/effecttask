@@ -1,0 +1,57 @@
+body{
+    background: whitesmoke;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-right: 40%;
+    padding-left: 10%;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 50fr 50fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 1fr;
+    grid-template-areas: 
+    "name-input email-input"
+    "task-input task-input";
+}
+
+.name-input-block{
+    grid-area: name-input;
+}
+
+.email-input-block{
+    grid-area: email-input;
+}
+
+.task-input-block{
+    grid-area: task-input;
+}
+
+.list{
+    padding-left: 0rem;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+strong{
+    margin-right: 1rem;
+}
+
+.menu-button{
+    margin-left: 10px;
+}
+
+.margin-input-modal{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
